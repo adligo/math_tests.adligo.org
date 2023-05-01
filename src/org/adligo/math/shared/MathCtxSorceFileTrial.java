@@ -12,7 +12,11 @@ public class MathCtxSorceFileTrial extends JjSourceFileTrial {
   public void testEgcd() {
     MathCtx ctx = new MathCtx();
     
-    I_EgcdResult r = ctx.egcd(BigInteger.valueOf(240),BigInteger.valueOf(46));
+    assert240_46(ctx.egcd(BigInteger.valueOf(240),BigInteger.valueOf(46)));
+    assert240_46(ctx.egcd(BigInteger.valueOf(46),BigInteger.valueOf(240)));
+  }
+
+  private void assert240_46(I_EgcdResult r) {
     equals(BigInteger.valueOf(2), r.getResult());
     equals(BigInteger.valueOf(-9), r.getBca());
     equals(BigInteger.valueOf(47), r.getBcb());
