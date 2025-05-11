@@ -1,8 +1,9 @@
-package org.adligo.math.shared;
+package org.adligo.math_tests.shared;
 
 import java.math.BigInteger;
 
 import org.adligo.i_math.shared.I_EgcdResult;
+import org.adligo.math.shared.MathCtx;
 import org.adligo.tests4j4jj.JjSourceFileTrial;
 import org.junit.jupiter.api.Test;
 
