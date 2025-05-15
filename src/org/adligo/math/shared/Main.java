@@ -1,4 +1,4 @@
-package org.adligo.math_tests.shared;
+package org.adligo.math.shared;
 
 import java.io.Writer;
 
